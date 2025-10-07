@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Finjusteringar inspirerade av Polaris/Husqvarna: industriellt, robust, tydligt. */
+:root { color-scheme: dark; }
+.prose :where(a):not(:where(.not-prose *)) { @apply text-brand-accent underline; }
+button, .btn { @apply inline-flex items-center justify-center; }

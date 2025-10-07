@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Skog & Trädgård",
+    "image": "/assets/images/skog-tradgard.svg",
+    "url": "https://extern-shop.example/skog-tradgard",
+    "enabled": true
+  },
+  {
+    "title": "Snöskoter & ATV",
+    "image": "/assets/images/snoskoter-atv.svg",
+    "url": "https://extern-shop.example/snoskoter-atv",
+    "enabled": true
+  },
+  {
+    "title": "Skogsvagnar & Släpvagnar",
+    "image": "/assets/images/skogsvagnar-slap.svg",
+    "url": "https://extern-shop.example/skogsvagnar-slap",
+    "enabled": true
+  },
+  {
+    "title": "Häst",
+    "image": "/assets/images/hast.svg",
+    "url": "https://extern-shop.example/hast",
+    "enabled": true
+  },
+  {
+    "title": "Lantbruk",
+    "image": "/assets/images/lantbruk.svg",
+    "url": "https://extern-shop.example/lantbruk",
+    "enabled": true
+  },
+  {
+    "title": "Elstängsel & Stolp",
+    "image": "/assets/images/elstangsel-stolp.svg",
+    "url": "https://extern-shop.example/elstangsel-stolp",
+    "enabled": true
+  },
+  {
+    "title": "Djurfoder & Stallströ",
+    "image": "/assets/images/djurfoder-stallstro.svg",
+    "url": "https://extern-shop.example/djurfoder-stallstro",
+    "enabled": true
+  }
+]

@@ -1,0 +1,25 @@
+<footer class="mt-16 border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
+    <div>
+      <div class="font-semibold mb-2">{{ site.name }}</div>
+      <p>{{ site.contact.address }}</p>
+      <p><a href="tel:{{ site.contact.phone | replace(' ', '') }}" class="underline">{{ site.contact.phone }}</a></p>
+      <p><a href="mailto:{{ site.contact.email }}" class="underline">{{ site.contact.email }}</a></p>
+    </div>
+    <div>
+      <div class="font-semibold mb-2">Hjälp</div>
+      <ul class="space-y-1">
+        <li><a href="/kopvillkor/" class="underline">Köpvillkor</a></li>
+        <li><a href="/service-bokning/" class="underline">Servicebokning</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="font-semibold mb-2">Följ oss</div>
+      <ul class="space-y-1">
+        <li><a href="{{ site.social.facebook }}" class="underline">Facebook</a></li>
+        <li><a href="{{ site.social.instagram }}" class="underline">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center text-xs opacity-70 pb-6">© {{ new Date() | isoDate | slice(0,4) }} {{ site.name }}</div>
+</footer>

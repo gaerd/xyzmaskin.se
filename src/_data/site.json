@@ -1,0 +1,15 @@
+{
+  "name": "XYZ Maskin",
+  "url": "https://xyz-maskin.example",
+  "title": "XYZ Maskin – Skog, Trädgård, Snöskoter & ATV m.m.",
+  "description": "Modern landningssida som leder vidare till våra produktkategorier i webbshopen.",
+  "contact": {
+    "email": "info@xyzmaskin.se",
+    "phone": "060-123456",
+    "address": "Industrivägen 1, 860 35 Söråker"
+  },
+  "social": {
+    "facebook": "#",
+    "instagram": "#"
+  }
+}

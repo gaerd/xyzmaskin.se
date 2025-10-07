@@ -1,0 +1,10 @@
+{% if campaign.active %}
+<div class="bg-brand-accent text-black">
+  <div class="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between gap-4 text-sm">
+    <div class="font-medium">{{ campaign.text }}</div>
+    {% if campaign.linkUrl %}
+    <a class="px-3 py-1.5 bg-black text-white rounded font-semibold hover:opacity-85" href="{{ campaign.linkUrl }}">{{ campaign.linkText }}</a>
+    {% endif %}
+  </div>
+</div>
+{% endif %}

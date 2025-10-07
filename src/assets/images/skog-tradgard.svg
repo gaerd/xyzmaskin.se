@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Skog och trädgård placeholder</title>
+  <desc id="desc">Abstrakt gradient i gröna toner som representerar skog och trädgård.</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f5132" />
+      <stop offset="100%" stop-color="#1e7a41" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grad)" />
+  <g fill="#ffffff" fill-opacity="0.1">
+    <circle cx="200" cy="200" r="140" />
+    <circle cx="480" cy="320" r="180" />
+    <circle cx="840" cy="260" r="150" />
+  </g>
+  <text x="60" y="700" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="96" font-weight="600" fill="#ffffff" fill-opacity="0.9">Skog &amp; Trädgård</text>
+</svg>

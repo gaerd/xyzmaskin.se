@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[dev]
+  command = "npm run dev"
+  port = 8888
+  publish = "_site"
+
+[[redirects]]
+  from = "/success"
+  to = "/tack/"
+  status = 301
+
+# Netlify Forms processing
+[[plugins]]
+  package = "@netlify/plugin-sitemap"

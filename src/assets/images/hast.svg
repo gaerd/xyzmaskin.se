@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Häst placeholder</title>
+  <desc id="desc">Varm brun gradient med mjuka former som antyder rörelse.</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a2c18" />
+      <stop offset="100%" stop-color="#8c5a2b" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grad)" />
+  <path d="M0 520 C 240 420, 480 620, 720 540 C 900 480, 1080 520, 1200 460 L 1200 800 L 0 800 Z" fill="#ffffff" fill-opacity="0.08" />
+  <text x="60" y="700" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="96" font-weight="600" fill="#ffffff" fill-opacity="0.9">Häst</text>
+</svg>

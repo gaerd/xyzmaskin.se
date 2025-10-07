@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title or site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta property="og:title" content="{{ title or site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}">
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body class="bg-brand-dark text-white antialiased">
+  {% include "components/header.njk" %}
+  <main id="main" class="min-h-[60vh]">
+    {{ content | safe }}
+  </main>
+  {% include "components/footer.njk" %}
+</body>
+</html>

@@ -1,0 +1,61 @@
+---
+title: Servicebokning
+layout: layouts/form.njk
+---
+<form name="servicebokning" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/tack/" class="grid gap-4">
+  <input type="hidden" name="form-name" value="servicebokning">
+  <p class="hidden">
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-4">
+    <label class="grid gap-1">Förnamn
+      <input class="px-3 py-2 rounded bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brand-accent" type="text" name="fornamn" required>
+    </label>
+    <label class="grid gap-1">Efternamn
+      <input class="px-3 py-2 rounded bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brand-accent" type="text" name="efternamn" required>
+    </label>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-4">
+    <label class="grid gap-1">E-post
+      <input class="px-3 py-2 rounded bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brand-accent" type="email" name="email" required>
+    </label>
+    <label class="grid gap-1">Telefon
+      <input class="px-3 py-2 rounded bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brand-accent" type="tel" name="telefon">
+    </label>
+  </div>
+
+  <label class="grid gap-1">Avdelning
+    <select name="avdelning" class="px-3 py-2 rounded bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brand-accent" required>
+      <option value="">Välj avdelning…</option>
+      <option>Skog & Trädgård</option>
+      <option>Snöskoter & ATV</option>
+      <option>Skogsvagnar & Släpvagnar</option>
+      <option>Häst</option>
+      <option>Lantbruk</option>
+      <option>Elstängsel & Stolp</option>
+      <option>Djurfoder & Stallströ</option>
+    </select>
+  </label>
+
+  <div class="grid md:grid-cols-2 gap-4">
+    <label class="grid gap-1">Produkt / Modell
+      <input class="px-3 py-2 rounded bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brand-accent" type="text" name="produkt">
+    </label>
+    <label class="grid gap-1">Önskat datum
+      <input class="px-3 py-2 rounded bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brand-accent" type="date" name="datum">
+    </label>
+  </div>
+
+  <label class="grid gap-1">Beskrivning / Fel
+    <textarea class="px-3 py-2 rounded bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-brand-accent" name="meddelande" rows="5"></textarea>
+  </label>
+
+  <!-- Netlify reCAPTCHA (aktivera i Netlify om önskas) -->
+  <div data-netlify-recaptcha="true"></div>
+
+  <button class="mt-2 px-5 py-3 bg-brand-accent text-black font-semibold rounded hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-brand-accent" type="submit">
+    Skicka bokning
+  </button>
+</form>
