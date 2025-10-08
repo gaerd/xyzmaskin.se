@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "ELEVENTY_ENV=dev npm-run-all --parallel dev:*",
+    "dev": "cross-env ELEVENTY_ENV=dev npm-run-all --parallel dev:*",
     "dev:11ty": "eleventy --serve --quiet",
     "dev:css": "postcss src/assets/styles.css -o _site/assets/styles.css --watch",
-    "build": "NODE_ENV=production run-p build:*",
+    "build": "cross-env NODE_ENV=production run-p build:*",
     "build:11ty": "eleventy",
     "build:css": "postcss src/assets/styles.css -o _site/assets/styles.css",
     "serve": "eleventy --serve"
@@ -17,6 +17,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.41",
     "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.13"
+    "tailwindcss": "^3.4.13",
+    "cross-env": "^7.0.3"
   }
 }
