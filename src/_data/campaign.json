@@ -1,6 +1,54 @@
 {
-  "active": true,
-  "text": "Höstkampanj: Service 10% på arbetskostnad – boka tid idag",
-  "linkText": "Boka service",
-  "linkUrl": "/service-bokning/"
+  "strip": {
+    "active": true,
+    "text": "Höstkampanj: Service 10% på arbetskostnad – boka tid idag",
+    "linkText": "Boka service",
+    "linkUrl": "/service-bokning/"
+  },
+  "hero": {
+    "eyebrow": "Höstkampanj",
+    "title": "Allt för gården, skogen och fritiden",
+    "description": "Hos XYZ Maskin hittar du produkter för skog & trädgård, lantbruk, häst och fritid – noga utvalda för att tåla nordiskt klimat och hårt arbete.",
+    "primaryCta": {
+      "label": "Boka service",
+      "url": "/service-bokning/"
+    },
+    "secondaryCta": {
+      "label": "Utforska sortimentet",
+      "url": "#kategorier"
+    },
+    "background": "/assets/campaign/polaris-snow.png"
+  },
+  "promotions": [
+    {
+      "title": "Förebyggande service",
+      "description": "10% rabatt på arbetskostnad när du bokar före 31 oktober.",
+      "cta": {
+        "label": "Boka nu",
+        "url": "/service-bokning/"
+      },
+      "theme": "dark",
+      "background": "linear-gradient(140deg, #18589b, #0d2f52)"
+    },
+    {
+      "title": "Finansiering utan ränta",
+      "description": "Utnyttja upp till 12 månaders räntefri delbetalning på utvald utrustning.",
+      "cta": {
+        "label": "Kontakta oss",
+        "url": "mailto:info@xyzmaskin.se"
+      },
+      "theme": "light",
+      "background": "linear-gradient(135deg, #ffffff, #f1f5fb)"
+    },
+    {
+      "title": "Demohelg i Söråker",
+      "description": "Testkör nya ATV- och skogsmaskiner lördag 12/10 kl. 10–15.",
+      "cta": {
+        "label": "Läs mer",
+        "url": "#event"
+      },
+      "theme": "dark",
+      "background": "linear-gradient(135deg, #ff6a00, #ff9240)"
+    }
+  ]
 }

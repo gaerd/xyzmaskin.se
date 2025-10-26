@@ -1,0 +1,41 @@
+{% if campaign.promotions and campaign.promotions | length %}
+<section class="-mt-12 pb-12">
+  <div class="max-w-7xl mx-auto grid gap-6 px-4 md:grid-cols-3">
+    {% for promo in campaign.promotions %}
+      {% set theme = promo.theme or "dark" %}
+      {% set background = promo.background %}
+      {% set baseClasses = "group relative overflow-hidden rounded-2xl p-6 md:p-8 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl" %}
+      {% if theme == "light" %}
+        {% set articleClasses = baseClasses + " text-slate-900" %}
+      {% else %}
+        {% set articleClasses = baseClasses + " text-white" %}
+      {% endif %}
+      <article class="{{ articleClasses }}" style="{% if background %}background: {{ background }};{% elif theme == 'light' %}background: linear-gradient(135deg, #ffffff, #f8fafc);{% else %}background: linear-gradient(135deg, #18589b, #0d2f52);{% endif %}">
+        {% if theme != "light" %}
+        <div class="absolute inset-0 bg-slate-900/20 mix-blend-multiply"></div>
+        {% endif %}
+        <div class="relative flex h-full flex-col justify-between gap-6">
+          <div class="space-y-3">
+            {% if promo.tagline %}
+            <p class="text-xs uppercase tracking-[0.3em] {% if theme == 'light' %}text-brand{% else %}text-white/70{% endif %}">{{ promo.tagline }}</p>
+            {% endif %}
+            <h3 class="text-2xl font-semibold leading-snug">{{ promo.title }}</h3>
+            {% if promo.description %}
+            <p class="{% if theme == 'light' %}text-slate-600{% else %}text-white/85{% endif %}">{{ promo.description }}</p>
+            {% endif %}
+          </div>
+          {% if promo.cta and promo.cta.label and promo.cta.url %}
+          <div>
+            <a href="{{ promo.cta.url }}"
+               class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-offset-2 {% if theme == 'light' %}bg-brand text-white focus:ring-brand focus:ring-offset-white hover:bg-brand-dark{% else %}bg-white text-brand focus:ring-white focus:ring-offset-brand hover:bg-white/90{% endif %}">
+              {{ promo.cta.label }}
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

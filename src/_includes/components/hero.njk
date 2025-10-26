@@ -1,14 +1,36 @@
-<section class="relative overflow-hidden bg-gradient-to-br from-brand-light/80 via-white to-white">
-  <div class="max-w-7xl mx-auto px-4 py-20">
-    <h1 class="text-4xl md:text-5xl font-semibold leading-tight text-slate-900">Utrustning för arbete och äventyr</h1>
-    <p class="mt-4 max-w-2xl text-lg text-slate-600">Skog & Trädgård, Snöskoter & ATV, Skogsvagnar & Släpvagnar, Häst, Lantbruk, Elstängsel & Stolp samt Djurfoder & Stallströ.</p>
-    <div class="mt-8 flex flex-wrap items-center gap-4">
-      <a href="#kategorier" class="inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 font-semibold text-white shadow-md transition hover:bg-brand-dark focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 focus:ring-offset-white">
-        Utforska kategorier
+{% set hero = campaign.hero %}
+{% if hero %}
+<section class="relative isolate overflow-hidden text-white">
+  <div class="absolute inset-0">
+    <div class="h-full w-full bg-cover bg-center" style="background-image: url('{{ hero.background or "/assets/images/hero-background.svg" }}');"></div>
+  </div>
+  <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-[2px]"></div>
+  <div class="relative max-w-7xl mx-auto px-4 py-28 lg:py-36">
+    <div class="max-w-3xl space-y-6">
+      {% if hero.eyebrow %}
+      <p class="text-sm uppercase tracking-[0.3em] text-white/80">{{ hero.eyebrow }}</p>
+      {% endif %}
+      {% if hero.title %}
+      <h1 class="text-4xl md:text-6xl font-semibold leading-tight drop-shadow-lg">{{ hero.title }}</h1>
+      {% endif %}
+      {% if hero.description %}
+      <p class="text-lg text-white/85">{{ hero.description }}</p>
+      {% endif %}
+    </div>
+    <div class="mt-10 flex flex-wrap items-center gap-4">
+      {% if hero.primaryCta and hero.primaryCta.url and hero.primaryCta.label %}
+      <a href="{{ hero.primaryCta.url }}" class="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 font-semibold text-brand shadow-lg transition hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand">
+        {{ hero.primaryCta.label }}
       </a>
-      <a href="/service-bokning/" class="inline-flex items-center text-brand hover:text-brand-dark font-semibold">
-        Boka service →
+      {% endif %}
+      {% if hero.secondaryCta and hero.secondaryCta.url and hero.secondaryCta.label %}
+      <a href="{{ hero.secondaryCta.url }}" class="inline-flex items-center gap-2 rounded-full border border-white/70 px-6 py-3 font-semibold text-white transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-slate-900">
+        {{ hero.secondaryCta.label }}
+        <span aria-hidden="true">&rarr;</span>
       </a>
+      {% endif %}
     </div>
   </div>
+  <div class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-50"></div>
 </section>
+{% endif %}
