@@ -21,9 +21,10 @@ Statisk landningssida för XYZ Maskin byggd med Eleventy (11ty) och Tailwind CSS
 |  |- index.njk                 # startsidan med kampanj och kategorikort
 |  |- service-bokning.njk       # Netlify-formulär för servicebokningar
 |  |- kopvillkor.md             # informationssida som använder layouts/page.njk
-|  |- assets/                   # Tailwind-ingång (styles.css) och SVG-ikoner
+|  |- assets/                   # Genererade statiska tillgångar (site.css, SVG-ikoner)
 |  |- _data/                    # JSON/JS-data (kampanj, kategorier, site-info)
 |  |- _includes/                # layouts, komponenter och Nunjucks-makron
+|  |- styles/                   # Tailwind-ingång (tailwind.css)
 |- .eleventy.js                 # Eleventy-konfiguration och egen kategori-collection
 |- netlify.toml                 # Netlify build/dev samt formulärkonfiguration
 |- postcss.config.js            # PostCSS + Tailwind + Autoprefixer
@@ -34,7 +35,7 @@ Statisk landningssida för XYZ Maskin byggd med Eleventy (11ty) och Tailwind CSS
 - `src/_includes/components/` innehåller visuella block som header, footer, hero, kampanjlistan och kategorikorten.
 - `src/_includes/layouts/` definierar basstruktur, sida och formulärlayout.
 - `src/_data/categories.json` laddas via en custom Eleventy-collection som filtrerar bort kategorier där `enabled` är `false`.
-- `src/_data/campaign.json` styr kampanjremsan; sätt `active` till `false` för att dölja den.
+- `src/_data/campaign.json` styr kampanjremsan (`strip`), heron (`hero`) och de tre kampanjkorten (`promotions`).
 - `src/_data/site.json` och `currentYear.js` levererar site-metadata, kontaktuppgifter samt årtal till templates.
 
 ## Formuläret för servicebokning
@@ -48,6 +49,11 @@ Alla innehållsfiler är sparade i UTF-8 för att säkerställa korrekta svenska
 - Accentfärg: `#FF6A00` (`text-brand-accent`, `bg-brand-accent`) lyfter kampanjer och call-to-actions.
 - Ljusa ytor (`bg-slate-50`, `bg-white`) och mjuka skuggor ger ett luftigt formspråk.
 
+## CSS-byggkedja
+- Tailwind-direktiv och eventuella globala regler skrivs i `src/styles/tailwind.css`.
+- `npm run dev:css` / `npm run build:css` kompilerar filen till `src/assets/site.css`.
+- Eleventy kopierar hela `src/assets/` till `_site/assets/`, så CSS-filen överlever Eleventys röjning av `_site` mellan rebuilds.
+
 ## Deployment
 Projektet är klart för Netlify:
 - `netlify.toml` pekar build-steget till `npm run build` och publik katalog `_site`.
@@ -56,5 +62,5 @@ Projektet är klart för Netlify:
 
 ## Vidareutveckling
 - Lägg till innehållssidor genom att skapa fler `.njk` eller `.md`-filer i `src/`.
-- Uppdatera styling i `src/assets/styles.css`; kör `npm run dev` för live-kompilering.
+- Uppdatera styling i `src/styles/tailwind.css`; kör `npm run dev` för live-kompilering (PostCSS genererar `src/assets/site.css`).
 - Skapa fler formulär genom att duplicera strukturen i `service-bokning.njk` och uppdatera Netlify-konfigurationen.

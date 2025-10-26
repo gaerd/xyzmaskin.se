@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light, clean default styling with a blue primary accent. */
+:root {
+  color-scheme: light;
+}
+
+.prose :where(a):not(:where(.not-prose *)) {
+  @apply text-brand underline;
+}
+
+button, .btn {
+  @apply inline-flex items-center justify-center;
+}
