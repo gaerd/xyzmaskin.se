@@ -13,6 +13,9 @@ module.exports = {
           DEFAULT: "#f4f6f9",
           card: "#ffffff"
         }
+      },
+      fontFamily: {
+        sans: ["Barlow", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "\"Segoe UI\"", "sans-serif"]
       }
     }
   },

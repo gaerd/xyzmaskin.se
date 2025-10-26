@@ -1,21 +1,24 @@
 <!doctype html>
 <html lang="sv">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ title or site.title }}</title>
-  <meta name="description" content="{{ description or site.description }}">
-  <meta property="og:title" content="{{ title or site.title }}">
-  <meta property="og:description" content="{{ description or site.description }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}">
-  <link rel="stylesheet" href="/assets/site.css" />
-</head>
-<body class="bg-slate-50 text-slate-900 antialiased">
-  {% include "components/header.njk" %}
-  <main id="main" class="min-h-[60vh]">
-    {{ content | safe }}
-  </main>
-  {% include "components/footer.njk" %}
-</body>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{{ title or site.title }}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    <meta property="og:title" content="{{ title or site.title }}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="/assets/site.css"/>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased font-sans">
+    {% include "components/header.njk" %}
+    <main id="main" class="min-h-[60vh]">
+      {{ content | safe }}
+    </main>
+    {% include "components/footer.njk" %}
+  </body>
 </html>
