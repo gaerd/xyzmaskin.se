@@ -1,44 +1,62 @@
 [
   {
-    "title": "Skog \u0026 Tr\u00E4dg\u00E5rd",
-    "image": "/assets/images/categories/skog-tradgard.jpg",
-    "url": "https://extern-shop.example/skog-tradgard",
+    "title": "Skog",
+    "image": "/assets/images/categories/skog.jpg",
+    "url": "https://xyzmaskin.e-line.nu/XYZ/Skog",
     "enabled": true
   },
   {
-    "title": "Sn\u00F6skoter \u0026 ATV",
-    "image": "/assets/images/categories/snoskoter-atv.jpg",
-    "url": "https://extern-shop.example/snoskoter-atv",
+    "title": "Trädgård",
+    "image": "/assets/images/categories/tradgard.jpg",
+    "url": "https://xyzmaskin.e-line.nu/XYZ/tradgard",
     "enabled": true
   },
   {
-    "title": "Skogsvagnar \u0026 Sl\u00E4p",
-    "image": "/assets/images/categories/skogsvagnar-slap.jpg",
-    "url": "https://extern-shop.example/skogsvagnar-slap",
+    "title": "Skoter",
+    "image": "/assets/images/categories/snoskoter.jpg",
+    "url": "https://xyzmaskin.e-line.nu/XYZ/skoter",
     "enabled": true
   },
   {
-    "title": "H\u00E4st",
-    "image": "/assets/images/categories/hast.jpg",
-    "url": "https://extern-shop.example/hast",
+    "title": "ATV",
+    "image": "/assets/images/categories/atv-polaris.jpg",
+    "url": "https://xyzmaskin.e-line.nu/XYZ/atv",
+    "enabled": true
+  },
+  {
+    "title": "Släp",
+    "image": "/assets/images/categories/slap.jpg",
+    "url": "https://xyzmaskin.e-line.nu/XYZ/slap",
+    "enabled": true
+  },
+  {
+    "title": "Ryttare",
+    "image": "/assets/images/categories/ryttare.jpg",
+    "url": "https://xyzmaskin.e-line.nu/XYZ/ryttare",
     "enabled": true
   },
   {
     "title": "Lantbruk",
     "image": "/assets/images/categories/lantbruk.jpg",
-    "url": "https://extern-shop.example/lantbruk",
+    "url": "https://xyzmaskin.e-line.nu/XYZ/lantbruk",
     "enabled": true
   },
   {
-    "title": "Elst\u00E4ngsel \u0026 Stolp",
-    "image": "/assets/images/categories/elstangsel-stolp.jpg",
-    "url": "https://extern-shop.example/elstangsel-stolp",
+    "title": "Fritidskläder",
+    "image": "/assets/images/categories/fritidsklader.jpg",
+    "url": "https://xyzmaskin.e-line.nu/XYZ/fritidsklader",
     "enabled": true
   },
   {
-    "title": "Djurfoder \u0026 Stallstr\u00F6",
-    "image": "/assets/images/categories/djurfoder-stallstro.jpg",
-    "url": "https://extern-shop.example/djurfoder-stallstro",
+    "title": "Hund",
+    "image": "/assets/images/categories/hund.jpg",
+    "url": "https://xyzmaskin.e-line.nu/XYZ/hund",
+    "enabled": true
+  },
+  {
+    "title": "Häst",
+    "image": "/assets/images/categories/hast.jpg",
+    "url": "https://xyzmaskin.e-line.nu/XYZ/hast",
     "enabled": true
   }
 ]

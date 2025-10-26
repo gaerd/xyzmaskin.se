@@ -5,11 +5,11 @@
   "description": "Modern landningssida som leder vidare till våra produktkategorier i webbshopen.",
   "contact": {
     "email": "info@xyzmaskin.se",
-    "phone": "060-123456",
+    "phone": "0650-54 34 34",
     "address": "Hallstaåsvägen 37, 824 35 Hudiksvall"
   },
   "social": {
-    "facebook": "#",
-    "instagram": "#"
+    "facebook": "https://www.facebook.com/xyzmaskin/?locale=sv_SE",
+    "instagram": "https://www.instagram.com/xyzmaskinab/"
   }
 }

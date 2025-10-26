@@ -1,0 +1,44 @@
+[
+  {
+    "weekday": 1,
+    "label": "Måndag",
+    "open": "8:00",
+    "close": "18:00"
+  },
+  {
+    "weekday": 2,
+    "label": "Tisdag",
+    "open": "8:00",
+    "close": "18:00"
+  },
+  {
+    "weekday": 3,
+    "label": "Onsdag",
+    "open": "8:00",
+    "close": "18:00"
+  },
+  {
+    "weekday": 4,
+    "label": "Torsdag",
+    "open": "8:00",
+    "close": "18:00"
+  },
+  {
+    "weekday": 5,
+    "label": "Fredag",
+    "open": "8:00",
+    "close": "18:00"
+  },
+  {
+    "weekday": 6,
+    "label": "Lördag",
+    "open": "10:00",
+    "close": "14:00"
+  },
+  {
+    "weekday": 0,
+    "label": "Söndag",
+    "open": "null",
+    "close": null
+  }
+]

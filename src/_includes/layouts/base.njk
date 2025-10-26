@@ -17,7 +17,9 @@
   <body class="bg-slate-50 text-slate-900 antialiased font-sans">
     {% include "components/header.njk" %}
     <main id="main" class="min-h-[60vh]">
-      {{ content | safe }}
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
     </main>
     {% include "components/footer.njk" %}
   </body>
