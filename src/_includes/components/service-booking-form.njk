@@ -1,0 +1,58 @@
+{% macro render(department, formName, site) %}
+<form
+  name="{{ formName }}"
+  method="POST"
+  netlify
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/tack/"
+  accept-charset="UTF-8"
+  class="service-form grid gap-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hidden"
+  data-service-form="{{ formName }}"
+>
+  <input type="hidden" name="form-name" value="{{ formName }}">
+  <input type="hidden" name="avdelning" value="{{ department }}">
+  <p class="hidden">
+    <label>Fyll inte i det här fältet: <input name="bot-field"/></label>
+  </p>
+
+  <div class="grid gap-4 md:grid-cols-2">
+    <label class="grid gap-1 text-sm font-medium text-slate-700">Förnamn
+      <input class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" type="text" name="fornamn" required data-auto-focus>
+    </label>
+    <label class="grid gap-1 text-sm font-medium text-slate-700">Efternamn
+      <input class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" type="text" name="efternamn" required>
+    </label>
+  </div>
+
+  <div class="grid gap-4 md:grid-cols-2">
+    <label class="grid gap-1 text-sm font-medium text-slate-700">E-post
+      <input class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" type="email" name="email" required>
+    </label>
+    <label class="grid gap-1 text-sm font-medium text-slate-700">Telefon
+      <input class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" type="tel" name="telefon">
+    </label>
+  </div>
+
+  <div class="grid gap-4 md:grid-cols-2">
+    <label class="grid gap-1 text-sm font-medium text-slate-700">Produkt / Modell
+      <input class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" type="text" name="produkt">
+    </label>
+    <label class="grid gap-1 text-sm font-medium text-slate-700">Önskat datum
+      <input class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" type="date" name="datum">
+    </label>
+  </div>
+
+  <label class="grid gap-1 text-sm font-medium text-slate-700">Beskrivning / Fel
+    <textarea class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" name="meddelande" rows="5"></textarea>
+  </label>
+
+  {% if site.features and site.features.recaptcha %}
+  <div data-netlify-recaptcha="true"></div>
+  {% endif %}
+
+  <button class="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 font-semibold text-white shadow-md transition hover:bg-brand-dark focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 focus:ring-offset-white" type="submit">
+    Skicka bokning
+  </button>
+</form>
+{% endmacro %}

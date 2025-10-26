@@ -2,66 +2,108 @@
 title: Servicebokning
 layout: layouts/form.njk
 ---
-<form
-  name="servicebokning"
-  method="POST"
-  netlify
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  action="/tack/"
-  accept-charset="UTF-8"
-  class="grid gap-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
->
-  <input type="hidden" name="form-name" value="servicebokning">
-  <p class="hidden">
-    <label>Fyll inte i det här fältet: <input name="bot-field"/></label>
-  </p>
+{% from "components/service-booking-form.njk" import render as serviceBookingForm %}
 
-  <div class="grid gap-4 md:grid-cols-2">
-    <label class="grid gap-1 text-sm font-medium text-slate-700">Förnamn
-      <input class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" type="text" name="fornamn" required>
-    </label>
-    <label class="grid gap-1 text-sm font-medium text-slate-700">Efternamn
-      <input class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" type="text" name="efternamn" required>
-    </label>
+{% set departments = [
+  {
+    "label": "Skog & Trädgård",
+    "description": "Service och underhåll för motorsågar, gräsklippare och trädgårdsmaskiner.",
+    "form": "servicebokning-skog-tradgard"
+  },
+  {
+    "label": "Snöskoter & ATV",
+    "description": "Vi ser till att din maskin är redo för nästa äventyr.",
+    "form": "servicebokning-snoskoter-atv"
+  },
+  {
+    "label": "Släpvagnar",
+    "description": "Vi servar, justerar och ser till att din vagn är i toppskick.",
+    "form": "servicebokning-slapvagnar"
+  }
+] %}
+
+<div class="space-y-10" data-service-booking>
+  <div class="space-y-4">
+    <p class="text-base font-medium text-slate-700">Boka service snabbt och enkelt – vi tar hand om resten.
+</p>
+    <p class="text-base text-slate-600">Välj avdelning nedan så hamnar din bokning direkt hos rätt team.</p>
+    <fieldset class="space-y-3">
+      <legend class="text-sm font-semibold uppercase tracking-wide text-slate-500">1. Välj avdelning</legend>
+      <div class="grid gap-3 md:grid-cols-3">
+        {% for dept in departments %}
+          <label class="relative flex cursor-pointer flex-col gap-2 rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-brand/60 hover:shadow-md">
+            <input
+            class="peer sr-only"
+            type="radio"
+            name="service-department"
+            value="{{ dept.form }}"
+            data-service-department
+            {% if loop.first %}checked{% endif %}
+          >
+            <span class="text-sm font-semibold text-slate-800">{{ dept.label }}</span>
+            <span class="text-sm text-slate-600">{{ dept.description }}</span>
+            <span class="pointer-events-none absolute inset-0 rounded-xl border-2 border-transparent peer-checked:border-brand peer-focus-visible:border-brand"></span>
+          </label>
+        {% endfor %}
+      </div>
+    </fieldset>
   </div>
 
-  <div class="grid gap-4 md:grid-cols-2">
-    <label class="grid gap-1 text-sm font-medium text-slate-700">E-post
-      <input class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" type="email" name="email" required>
-    </label>
-    <label class="grid gap-1 text-sm font-medium text-slate-700">Telefon
-      <input class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" type="tel" name="telefon">
-    </label>
+  <div class="space-y-4" data-service-form-wrapper>
+    <p class="text-sm font-medium text-slate-700">2. Fyll i dina uppgifter</p>
+    {% for dept in departments %}
+      {{ serviceBookingForm(dept.label, dept.form, site) }}
+    {% endfor %}
   </div>
+</div>
 
-  <label class="grid gap-1 text-sm font-medium text-slate-700">Avdelning
-    <select name="avdelning" class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" required>
-      <option value="">Välj avdelning...</option>
-      <option>Skog & Trädgård</option>
-      <option>Snöskoter & ATV</option>
-      <option>Släpvagnar</option>
-    </select>
-  </label>
-
-  <div class="grid gap-4 md:grid-cols-2">
-    <label class="grid gap-1 text-sm font-medium text-slate-700">Produkt / Modell
-      <input class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" type="text" name="produkt">
-    </label>
-    <label class="grid gap-1 text-sm font-medium text-slate-700">Önskat datum
-      <input class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" type="date" name="datum">
-    </label>
+<noscript>
+  <div class="mt-6 rounded-xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-700">
+    JavaScript är avstängt. Alla formulär visas nedan – skicka endast in det som matchar din avdelning.
   </div>
+  <style>
+    [data-service-form] {
+      display: block !important;
+    }
+  </style>
+</noscript>
 
-  <label class="grid gap-1 text-sm font-medium text-slate-700">Beskrivning / Fel
-    <textarea class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40" name="meddelande" rows="5"></textarea>
-  </label>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var radios = document.querySelectorAll("[data-service-department]");
+    var forms = document.querySelectorAll("[data-service-form]");
 
-  {% if site.features and site.features.recaptcha %}
-  <div data-netlify-recaptcha="true"></div>
-  {% endif %}
+    if (!radios.length || !forms.length) 
+      return;
+    
+    function showForm(formName) {
+      forms.forEach(function (form) {
+        var isActive = form.dataset.serviceForm === formName;
+        form.hidden = !isActive;
+        form
+          .classList
+          .toggle("hidden", !isActive);
 
-  <button class="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 font-semibold text-white shadow-md transition hover:bg-brand-dark focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 focus:ring-offset-white" type="submit">
-    Skicka bokning
-  </button>
-</form>
+        if (isActive) {
+          var focusTarget = form.querySelector("[data-auto-focus]");
+          if (focusTarget) {
+            focusTarget.focus();
+          }
+        }
+      });
+    }
+
+    radios.forEach(function (radio) {
+      radio.addEventListener("change", function () {
+        if (radio.checked) {
+          showForm(radio.value);
+        }
+      });
+    });
+
+    var preselected = document.querySelector("[data-service-department]:checked");
+    if (preselected) {
+      showForm(preselected.value);
+    }
+  });
+</script>
