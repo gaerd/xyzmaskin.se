@@ -4,9 +4,14 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#004A7C", // mörk blå/grå med industriell känsla
-          accent: "#FF6A00",  // varm accent för tydliga CTA:er
-          dark: "#0B0F14"
+          DEFAULT: "#18589b", // primary brand blue
+          accent: "#FF6A00",  // warm accent for calls to action
+          light: "#eff4fb",
+          dark: "#0d2f52"
+        },
+        surface: {
+          DEFAULT: "#f4f6f9",
+          card: "#ffffff"
         }
       }
     }

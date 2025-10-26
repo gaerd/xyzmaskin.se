@@ -43,6 +43,11 @@ Statisk landningssida för XYZ Maskin byggd med Eleventy (11ty) och Tailwind CSS
 ## Teckenkodning
 Alla innehållsfiler är sparade i UTF-8 för att säkerställa korrekta svenska tecken i gränssnittet. Fortsätt använda UTF-8 utan BOM när du uppdaterar texter.
 
+## Designprinciper
+- Primärfärg: `#18589b` (`text-brand`, `bg-brand`) används för länkar och knappar.
+- Accentfärg: `#FF6A00` (`text-brand-accent`, `bg-brand-accent`) lyfter kampanjer och call-to-actions.
+- Ljusa ytor (`bg-slate-50`, `bg-white`) och mjuka skuggor ger ett luftigt formspråk.
+
 ## Deployment
 Projektet är klart för Netlify:
 - `netlify.toml` pekar build-steget till `npm run build` och publik katalog `_site`.

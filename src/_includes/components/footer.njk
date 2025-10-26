@@ -1,25 +1,25 @@
-<footer class="mt-16 border-t border-white/10">
-  <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
-    <div>
-      <div class="font-semibold mb-2">{{ site.name }}</div>
+<footer class="mt-16 border-t border-slate-200 bg-white">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid gap-8 text-sm text-slate-600 md:grid-cols-3">
+    <div class="space-y-1">
+      <div class="text-base font-semibold text-slate-800">{{ site.name }}</div>
       <p>{{ site.contact.address }}</p>
-      <p><a href="tel:{{ site.contact.phone | replace(' ', '') }}" class="underline">{{ site.contact.phone }}</a></p>
-      <p><a href="mailto:{{ site.contact.email }}" class="underline">{{ site.contact.email }}</a></p>
+      <p><a href="tel:{{ site.contact.phone | replace(' ', '') }}" class="text-brand hover:underline">{{ site.contact.phone }}</a></p>
+      <p><a href="mailto:{{ site.contact.email }}" class="text-brand hover:underline">{{ site.contact.email }}</a></p>
     </div>
     <div>
-      <div class="font-semibold mb-2">Hjälp</div>
+      <div class="text-base font-semibold text-slate-800 mb-2">Hjälp</div>
       <ul class="space-y-1">
-        <li><a href="/kopvillkor/" class="underline">Köpvillkor</a></li>
-        <li><a href="/service-bokning/" class="underline">Servicebokning</a></li>
+        <li><a href="/kopvillkor/" class="hover:text-brand">Köpvillkor</a></li>
+        <li><a href="/service-bokning/" class="hover:text-brand">Servicebokning</a></li>
       </ul>
     </div>
     <div>
-      <div class="font-semibold mb-2">Följ oss</div>
+      <div class="text-base font-semibold text-slate-800 mb-2">Följ oss</div>
       <ul class="space-y-1">
-        <li><a href="{{ site.social.facebook }}" class="underline">Facebook</a></li>
-        <li><a href="{{ site.social.instagram }}" class="underline">Instagram</a></li>
+        <li><a href="{{ site.social.facebook }}" class="hover:text-brand">Facebook</a></li>
+        <li><a href="{{ site.social.instagram }}" class="hover:text-brand">Instagram</a></li>
       </ul>
     </div>
   </div>
-  <div class="text-center text-xs opacity-70 pb-6">© {{ currentYear }} {{ site.name }}</div>
+  <div class="text-center text-xs text-slate-500 pb-6">© {{ currentYear }} {{ site.name }}</div>
 </footer>

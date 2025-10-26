@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Finjusteringar inspirerade av Polaris/Husqvarna: industriellt, robust, tydligt. */
-:root { color-scheme: dark; }
-.prose :where(a):not(:where(.not-prose *)) { @apply text-brand-accent underline; }
+/* Light, clean default styling with a blue primary accent. */
+:root { color-scheme: light; }
+.prose :where(a):not(:where(.not-prose *)) { @apply text-brand underline; }
 button, .btn { @apply inline-flex items-center justify-center; }

@@ -1,9 +1,11 @@
 {% if campaign.active %}
-<div class="bg-brand-accent text-black">
-  <div class="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between gap-4 text-sm">
-    <div class="font-medium">{{ campaign.text }}</div>
+<div class="bg-brand text-white">
+  <div class="max-w-6xl mx-auto flex flex-col gap-3 px-4 py-3 text-sm sm:flex-row sm:items-center sm:justify-between">
+    <div class="font-medium tracking-tight text-center sm:text-left">{{ campaign.text }}</div>
     {% if campaign.linkUrl %}
-    <a class="px-3 py-1.5 bg-black text-white rounded font-semibold hover:opacity-85" href="{{ campaign.linkUrl }}">{{ campaign.linkText }}</a>
+    <a class="inline-flex items-center justify-center gap-2 rounded-full bg-white px-4 py-2 font-semibold text-brand transition hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-brand focus:ring-white" href="{{ campaign.linkUrl }}">
+      {{ campaign.linkText }}
+    </a>
     {% endif %}
   </div>
 </div>
