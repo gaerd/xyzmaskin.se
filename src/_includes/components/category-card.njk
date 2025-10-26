@@ -1,17 +1,16 @@
 {% macro card(item) %}
-<article class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+<article class="group relative overflow-hidden rounded-2xl shadow-lg">
   <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy"
-       class="h-56 w-full object-cover transition duration-300 group-hover:scale-[1.02]" />
-  <div class="flex flex-1 flex-col p-5">
-    <h3 class="text-xl font-semibold text-slate-900">{{ item.title }}</h3>
-    <div class="mt-4">
-      <a href="{{ item.url }}"
-         class="inline-flex items-center gap-2 text-sm font-semibold text-brand transition hover:text-brand-dark"
-         aria-label="Till {{ item.title }}">
-        Till kategori
-        <span aria-hidden="true">→</span>
-      </a>
-    </div>
+       class="h-72 w-full object-cover transition duration-500 group-hover:scale-105" />
+  <div class="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-900/50 to-slate-900/30 transition duration-500 group-hover:from-slate-900/80 group-hover:to-slate-900/40"></div>
+  <div class="absolute inset-0 flex flex-col items-start justify-end p-6 md:p-8 gap-3">
+    <h3 class="text-2xl font-semibold uppercase tracking-wide text-white drop-shadow">{{ item.title }}</h3>
+    <a href="{{ item.url }}"
+       class="inline-flex items-center justify-center gap-2 rounded-full bg-white/90 px-5 py-2 text-sm font-semibold text-brand shadow-sm transition hover:bg-white"
+       aria-label="Till {{ item.title }}">
+      Läs mer
+      <span aria-hidden="true">→</span>
+    </a>
   </div>
 </article>
 {% endmacro %}
