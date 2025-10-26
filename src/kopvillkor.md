@@ -16,4 +16,4 @@ Leveranstider och fraktvillkor framgår i den externa butiken.
 Se respektive policy i den externa butiken. Vid frågor, kontakta oss på [{{ site.contact.email }}](mailto:{{ site.contact.email }}).
 
 ## Kontakt
-{{ site.name }}, {{ site.contact.address }} • Tel: {{ site.contact.phone }}
+{{ site.name }}, {{ site.contact.address }} – Tel: {{ site.contact.phone }}
