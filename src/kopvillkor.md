@@ -1,4 +1,4 @@
-﻿---
+---
 title: Köp- och leveransvillkor
 layout: layouts/page.njk
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Om oss
 layout: layouts/page.njk
 permalink: /om-oss/
