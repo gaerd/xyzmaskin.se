@@ -3,49 +3,75 @@ title: Köp- och leveransvillkor
 layout: layouts/page.njk
 ---
 
-## Leveransgaranti
-Lagervaror skickas normalt inom 3-5 arbetsdagar. Under högsäsong kan leveransen ta längre tid. Om en lagervara tillfälligt är slut återkommer vi med en uppskattad leveranstid. Vill du inte vänta kan du avbeställa genom att kontakta oss snarast. Beställningsvaror levereras normalt inom 2-6 veckor. Felaktiga varor som beror på oss byter vi ut eller återbetalar.
+## Allmänt
+XYZ Maskin AB (org.nr 556645-1265) driver webbplatsen xyzmaskin.se och butiken på Hallstavägen 37, 824 34 Hudiksvall. Dessa köp- och leveransvillkor gäller för alla beställningar som görs av privatpersoner och företagskunder via webbplatsen, telefon eller e-post. Försäljning sker endast inom Sverige.
 
-## Leveranssätt
-- DHL
-- Hämta i butik
+Genom att lägga en beställning accepterar du villkoren och ansvarar för att de uppgifter du lämnar (leveransadress, kontaktuppgifter och organisationsnummer vid företagsköp) är korrekta. Kund som handlar måste ha fyllt 18 år eller ha målsmans godkännande.
 
-## Beställning
-Köpare under 18 år ska ha målsmans tillstånd innan köpet genomförs. Beställningar som görs i någon annans namn utan medgivande, eller på annat sätt som orsakar ekonomisk skada för XYZ Maskin AB, polisanmäls. När vi mottagit din beställning skickar vi en orderbekräftelse till angiven e-postadress med information om ordern. Spara orderbekräftelsen för eventuell kontakt med kundtjänst.
+Vi förbehåller oss rätten att uppdatera villkoren, priser och sortiment. Den version som publiceras här vid beställningstillfället gäller för ditt köp.
 
-## Betalningsalternativ
-- **Klarna Checkout:** Efter identifiering och riskbedömning visar Klarna Checkout vilka betalningsalternativ som erbjuds. Oavsett val hanterar Klarna eller Klarnas partners betalningstransaktionen, medan köpet görs direkt av butiken. Produkt- eller tjänstespecifika frågor riktas därför till butiken. Aktuella betalningsalternativ är faktura, kontokredit eller direktbetalning via bank. Faktura ligger som förvalt betalningsalternativ.
+## Villkor för privatpersoner
 
-## Priser
-Alla priser anges i svenska kronor exklusive frakt. Fraktkostnad tillkommer och visas i kundvagnen. Vid skrymmande beställningar kontaktar vi dig för eventuell extra fraktkostnad. Minsta ordervärde är 250 kronor.
+### Lagstiftning och ångerrätt
+Som privatkund omfattas ditt köp av Konsumentköplagen och Distansavtalslagen. Du har 14 dagars ångerrätt från den dag du mottar varan. Meddela oss via e-post eller telefon innan du returnerar. Varan ska vara oanvänd, i originalförpackning och med samtliga etiketter kvar. När returen godkänts krediteras beloppet via samma betalningssätt. Du står själv för returfrakten. Förseglade hygienartiklar eller specialbeställda varor omfattas inte av ångerrätten om förseglingen brutits.
 
-## Reklamation & returer
-Kontakta oss snarast om du upptäcker en skada på en beställd vara. Garanti gäller inte mot förslitningsskador. Vi står för returkostnaden och ser till att du får en felfri ersättningsvara så snart som möjligt. För att en reklamation ska godkännas ska varan vara rengjord och exempelvis täcken och kläder vara tvättade och torra. Vid tvist hänvisar vi till ARN (Allmänna reklamationsnämnden) och vi följer alltid deras rekommendationer.
+### Betalning
+Betalning sker via Klarna Checkout. Efter identifiering och kreditbedömning presenterar Klarna de betalningsalternativ som finns: faktura, kortbetalning, direktbetalning eller delbetalning. Avtalet för betalning upprättas mellan dig och Klarna. Eventuella frågor om produkter eller leverans besvaras av XYZ Maskin AB.
 
-Du har 14 dagar på dig att ångra ditt köp. Innan retur ska du kontakta oss via e-post eller telefon. Varan ska vara oanvänd, i originalförpackning och alla lappar ska sitta kvar. Du betalar själv returfrakten. För återbetalning, ange postgiro, bankgiro, personkonto eller bankkontonummer i samband med returen. Varor som returneras utan överenskommelse krediteras inte. Observera att REA-produkter inte omfattas av öppet köp, men du kan byta storlek eller byta till en annan vara i butiken.
+### Leverans och uthämtning
+Lagervaror skickas normalt inom 3-5 arbetsdagar. Beställningsvaror levereras oftast inom 2-6 veckor. Under högsäsong kan leveranstiden bli längre; du får i så fall information via e-post. När vi lämnar en försändelse till speditör skickas spårningsinformation till den e-postadress eller det mobilnummer du angivit. Försändelser levereras till närmaste DHL Service Point eller enligt vald tjänst. Du kan alltid välja att hämta din order kostnadsfritt i butiken.
 
-**Returadress:**  
-XYZ Maskin AB  
-Hallstaåsvägen 37  
-824 34 Hudiksvall
+### Reklamation och garanti
+Om en vara är felaktig eller skadad kontaktar du vår kundtjänst så snart som möjligt, helst inom två månader från att felet upptäckts. Vi står för returfrakten vid godkänd reklamation och ersätter med reparerad, utbytt eller krediterad vara. Garantier gäller inte för normalt slitage. Vid tvist följer vi rekommendationerna från Allmänna reklamationsnämnden (ARN).
 
-## Transportskador & ej uthämtade paket
-Om en vara skadas under transport ska du kontakta transportören och göra en skadeanmälan. Hämta inte ut ett synligt skadat paket. Upptäcker du skadan först när du öppnar paketet, och den kan kopplas till transportföretagets hantering, kontaktar du både transportören för skadeanmälan och oss så att vi kan ordna en omleverans eller på annat sätt lösa problemet. Om du inte hämtar ut din försändelse och den går i retur till oss (paket ligger normalt kvar cirka en månad) fakturerar vi 250 kronor för hanteringen.
+## Villkor för företagskunder
 
-## Personuppgifter
-De personuppgifter du lämnar i samband med en order används endast inom företaget. Kontaktinformationen behövs för att informera om eventuella problem med din order. Uppgifterna behandlas elektroniskt och du kan begära ett registerutdrag enligt gällande dataskyddslagstiftning genom att kontakta oss.
+### Tillämpad lag och avtal
+För företagskunder gäller Köplagen samt dessa villkor. Genom att acceptera en offert eller göra en beställning ingås avtal med XYZ Maskin AB.
 
-## Information
-Vi förbehåller oss för eventuella lagerfel eftersom varor visas både online och i butik. En vara kan ligga i en kunds varukorg och försvinner inte ur lagersaldo förrän kunden har betalat. Vi kontaktar dig om en vara är slutsåld efter beställning. Vi reserverar oss även för tryckfel, felaktig information, pris- eller specifikationsfel i sortimentet. Produktbilder kan skilja sig från verkliga färger på grund av ljus, skärminställningar eller svåråtergivna nyanser. Vi använder både leverantörers produktbilder och egna bilder. Bilderna får inte användas utan tillstånd från XYZ Maskin.
+### Betalning
+Betalning sker enligt överenskommelse. Standardvillkor är 30 dagars faktura efter godkänd kreditprövning. Vid utebliven betalning debiteras dröjsmålsränta enligt räntelagen samt påminnelseavgift. Vi kan begära förskottsbetalning eller delbetalning för specialbeställningar.
 
-## SMS-utskick
-Mobilnumret du anger i kassan kan användas för SMS-utskick om leverans eller annan kommunikation som rör din order.
+### Leveransvillkor
+Om inte annat avtalats sker leverans enligt Incoterms 2020 DAP (Delivered At Place) till den adress som angivits. Risken för varan övergår till kunden när den lämnats till speditören eller, vid hämtning i butik, när du mottagit varan. Leveranstider är vägledande; förseningar berättigar inte till skadestånd om de ligger utanför vår kontroll.
+
+### Reklamation, garanti och ansvar
+Företag ska granska varan vid mottagandet och reklamera skriftligen inom sju dagar vid synliga fel. Dolda fel ska reklameras utan dröjsmål efter att de upptäckts. Vår ersättningsskyldighet begränsas till att avhjälpa felet, leverera ny vara eller kreditera motsvarande belopp. Indirekta skador, följdskador eller utebliven vinst ersätts inte.
+
+### Retur- och ångerrätt
+Företagsköp omfattas inte av lagstadgad ångerrätt. Returer accepteras endast efter skriftlig överenskommelse, och eventuella kostnader för returfrakt eller värdeminskning debiteras köparen.
+
+## Gemensamma villkor
+
+### Priser och avgifter
+Priser för privatpersoner anges inklusive moms. Priser för företagskunder anges normalt exklusive moms. Fraktkostnad, eventuella miljö- eller serviceavgifter och postförskottsavgift redovisas i kassan innan ordern bekräftas. Vid större eller skrymmande försändelser kan extra fraktkostnad tillkomma; vi återkommer med offert för godkännande innan leverans.
+
+### Frakt och leveranssätt
+Vi erbjuder följande leveransalternativ:
+- DHL Service Point eller paket till ombud
+- DHL vägtransport för större gods
+- Upphämtning i butik
+
+Vid upphämtning ska orderbekräftelse eller giltig legitimation kunna visas.
+
+### Transportskador
+Upptäcker du en transportskada ska den anmälas direkt till speditören och dokumenteras med foto. Ta inte emot ett synligt skadat paket. Om skadan upptäcks efter utlämning kontaktar du både transportören och oss inom rimlig tid så att vi kan bistå med ersättningsleverans eller annan lösning.
+
+### Ej uthämtade eller nekade försändelser
+Försändelser som inte hämtas ut eller som nekas vid leverans och därmed går i retur debiteras en hanteringsavgift om 250 kronor samt faktisk frakt tur och retur.
+
+### Personuppgifter och kommunikation
+Vi behandlar personuppgifter enligt gällande dataskyddslagstiftning. Uppgifterna används för att hantera din order, leveransinformation, kundtjänst och garantiärenden. Du kan begära registerutdrag eller rättelse genom att kontakta oss. Mobilnummer kan användas för SMS-aviseringar om leverans eller annan information som rör din order. Vi lämnar inte ut uppgifter till tredje part utöver vad som krävs för betalning och leverans.
+
+### Force majeure
+Vi ansvarar inte för förseningar eller skador som beror på händelser utanför vår kontroll, såsom strejk, lockout, naturkatastrof, brand, myndighetsbeslut, krig, pandemier eller störningar i transport- eller energiförsörjning. Vid force majeure informerar vi dig så snart som möjligt och leverans genomförs utan onödigt dröjsmål när hindret upphört.
+
+### Produktinformation och reservationer
+Vi reserverar oss för slutförsäljning, lagerfel, prisjusteringar och eventuella tryck- eller skrivfel på webbplatsen. Produktbilder kan skilja sig från verkligheten beroende på leverantörsmaterial eller skärmars färgåtergivning.
 
 ## Kontakt
-Vid frågor kontaktar du oss på telefon 0650-54 34 34 eller via e-post order@xyzmaskin.se.
-
 XYZ Maskin AB  
-Hallstaåsvägen 37  
+Hallstavägen 37  
 824 34 Hudiksvall  
 Telefon: 0650-54 34 34  
-Organisationsnummer: 556645-1265
+E-post: order@xyzmaskin.se
