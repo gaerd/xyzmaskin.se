@@ -15,6 +15,11 @@ Vi förbehåller oss rätten att uppdatera villkoren, priser och sortiment. Den 
 ### Lagstiftning och ångerrätt
 Som privatkund omfattas ditt köp av Konsumentköplagen och Distansavtalslagen. Du har 14 dagars ångerrätt från den dag du mottar varan. Meddela oss via e-post eller telefon innan du returnerar. Varan ska vara oanvänd, i originalförpackning och med samtliga etiketter kvar. När returen godkänts krediteras beloppet via samma betalningssätt. Du står själv för returfrakten. Förseglade hygienartiklar eller specialbeställda varor omfattas inte av ångerrätten om förseglingen brutits.
 
+Returadress:   
+    XYZ Maskin AB
+    Hallstaåsvägen 37
+    824 34 Hudiksvall
+
 ### Betalning
 Betalning sker via Klarna Checkout. Efter identifiering och kreditbedömning presenterar Klarna de betalningsalternativ som finns: faktura, kortbetalning, direktbetalning eller delbetalning. Avtalet för betalning upprättas mellan dig och Klarna. Eventuella frågor om produkter eller leverans besvaras av XYZ Maskin AB.
 
